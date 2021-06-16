@@ -1,0 +1,155 @@
+.fundo {
+	background-color: #31e8a8;
+	padding: 54px;
+	line-height: 0.5;
+}
+
+.explicacao {
+	background-color: #dbd9d9;
+	border-radius: 5px;
+	width: 1100px;
+	height: 240px;
+	margin-left: 5%;
+	padding-top: 10px;
+}
+
+.fundo2 {
+	background-color: #dbd9d9;
+	border-radius: 5px;
+	width: 550px;
+	height: 350px;
+	margin-left: 25%;
+	margin-right: 100px; 
+	padding-left: 30px; 
+	padding-right: 30px;
+}
+
+.texto1 {
+	font-family: arial;
+	line-height: 1.0;
+	font-size: 15px;
+	margin: 20px;
+}
+
+.texto2 {
+	font-family: arial;
+	line-height: 1.5;
+	font-size: 15px;
+	margin: 20px;
+}
+
+.texto3 {
+	font-family: arial;
+	line-height: 1.5;
+	font-size: 15px;
+}
+
+.texto4 {
+	font-family: arial;
+	line-height: 1.5;
+	font-size: 15px;
+	margin-right: 20px;
+}
+
+.texto5 {
+	font-family: arial;
+	line-height: 1.5;
+	font-size: 15px;
+	margin: 20px;
+	color: #fff;
+}
+
+.texto6 {
+	font-family: arial;
+	line-height: 1.0;
+	font-size: 15px;
+	margin: 20px;
+	color: #ff0000
+}
+
+.titulo {
+	background-color: #e5eb34; 
+	border-radius: 5px;
+	width: 50 px;
+	height: 50px;
+	padding: 5px;
+	line-height: 1.5;
+}
+
+.atributos {
+	background-color: #2b6eff;
+	border-radius: 5px;
+	width: 5 px;
+	height: 10 px;
+	padding: 10px;
+	padding-left: 1px;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+
+.campos {
+	background-color: #fff;
+	border-radius: 5px;
+	width: 10 px;
+	height: 20px;
+	padding: 3px;
+	padding-right: 200px; 
+	cursor: pointer;
+}
+
+.campos2 {
+	background-color: #fff;
+	border-radius: 5px;
+	width: 10 px;
+	height: 20px;
+	padding: 3px;
+	padding-right: 120px; 
+	cursor: pointer;
+}
+
+.campos3 {
+	background-color: #fff;
+	border-radius: 5px;
+	width: 10 px;
+	height: 20px;
+	padding: 3px;
+	padding-right: 110px; 
+	cursor: pointer;
+}
+
+.calcular {
+	background-color: #ff0000;
+	border-radius: 5px;
+	width: 5 px;
+	height: 10 px;
+	padding: 10px;
+	padding-left: 1px;
+	margin-left: 310px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.resultado {
+	background-color: #fff;
+	border-radius: 5px;
+	padding-bottom: 10px;
+	padding-top: 10px; 
+	margin-right: 60%; 
+	margin-left: 37%;
+}
+
+.cima {
+	background-color: #2b6eff;
+	border-radius: 5px;
+	padding: 5 px;	
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.baixo {
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 5 px;	
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
