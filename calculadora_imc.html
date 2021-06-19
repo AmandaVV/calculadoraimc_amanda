@@ -1,8 +1,9 @@
 <html>
 	<head>
 		<title>Calculadora de IMC</title>
-		<meta http-equiv="content-type" content = "text/html; charset=utf-8" />
+		<script src="fun.js"></script>
 		<link rel="stylesheet" href="estilo_imc.css">
+		<meta http-equiv="content-type" content = "text/html; charset=utf-8" />
 	</head>
 	
 	<body>
@@ -24,22 +25,16 @@
 				<td width='20%' colspan='2'> <p align = 'center' class = 'titulo'> <br> <b class = 'texto1'> Digite algumas informações sobre você: </b> </p>
 			</tr>
 			<tr>
-				<td width='20%'> <p align = 'left' class = 'atributos'> <b class = 'texto5'> Nome:</b> <a class = 'campos'> </a> </p>
+				<td width='20%'> <p align = 'left' class = 'atributos'> <b class = 'texto5'> Nome:</b> <input type = 'text' id = 'nome'> </p>
 			</tr>
 			<tr>
-				<td width='20%'> <p align = 'left' class = 'atributos'> <b class = 'texto5'> Idade:</b> <a class = 'campos'> </a> </p> 
+				<td width='20%'> <p align = 'left' class = 'atributos'> <b class = 'texto5'> Altura (m):</b> <input type = 'float' id = 'altura'> </p>
 			</tr>
 			<tr>
-				<td width='20%'> <p align = 'left' class = 'atributos'> <b class = 'texto5'> Sexo:</b> <a class = 'campos'> </a> </p>
+				<td width='20%'> <p align = 'left' class = 'atributos'> <b class = 'texto5'> Peso (Kg):</b> <input type = 'float' id = 'peso'> </p>
 			</tr>
 			<tr>
-				<td width='20%'> <p align = 'left' class = 'atributos'> <b class = 'texto5'> Altura (em metros):</b> <a class = 'campos3'> </a> </p> 
-			</tr>
-			<tr>
-				<td width='20%'> <p align = 'left' class = 'atributos'> <b class = 'texto5'> Peso (em quilos): </b> <a class = 'campos2'> </a> </p>
-			</tr>
-			<tr>
-				<td width='20%'> <p align = 'right' class = 'calcular'> <b class = 'texto1'> CALCULAR </b> </p>
+				<td width = '20%'> <a align = 'right' class = 'calcular' onclick = 'calcular'> <b class = 'texto1'> CALCULAR </b> </a>
 			</tr>	
 		</table>
 		
@@ -47,19 +42,16 @@
 		
 		<table class='resultado' cellspacing = 10>	
 		<tr>
-			<td width='10%' colspan='2'> <b class = 'texto2' align = 'left'> Olá, Fulano </b> <br> _____________________________________
+			<td width='10%' colspan='2'> <b class = 'texto2' align = 'left'> Olá, <div id = 'nome'> </div> </b> _____________________________________
 		</tr>
 		<tr>
-			<br>
-		</tr>
-		<tr>
-			<td width='5%'> <b class = 'texto2' align = 'center'> RESULTADO: </b>
-			<td width='70%'> <b class = 'texto6' align = 'left'> NÚMERO </b>
+			<td width='5%'> <b class = 'texto2' align = 'center'> RESULTADO: </b> 
+			<td width='70%'> <div class = 'texto6' align = 'left' id='imc'> </div>
 		
 		</tr>
 		<tr>
 			<td width='5%'> <b class = 'texto2' align = 'center'> SITUAÇÃO: </b> 
-			<td width='70%'> <b class = 'texto6' align = 'center'> OBESIDADE III </b>
+			<td width='70%'> <div class = 'texto6' align = 'center' id = 'situacao'> </b> </div>
 		</tr>
 		</table>
 		
@@ -67,8 +59,8 @@
 		
 		<table>
 			<tr>
-				<td width='10%'> <p align = 'center' class = 'cima'> <b class = 'texto2'> Abaixo do Peso </b> </p>
-				<td width='10%'> <p align = 'center' class = 'cima'> <b class = 'texto2'> Peso Normal </b> </p>
+				<td width='10%'> <p align = 'center' class = 'cima'> <b class = 'texto2'> Magreza </b> </p>
+				<td width='10%'> <p align = 'center' class = 'cima'> <b class = 'texto2'> Normal </b> </p>
 				<td width='10%'> <p align = 'center' class = 'cima'> <b class = 'texto2'> Sobrepeso </b> </p>
 				<td width='10%'> <p align = 'center' class = 'cima'> <b class = 'texto2'> Obesidade Grau I </b> </p>
 				<td width='10%'> <p align = 'center' class = 'cima'> <b class = 'texto2'> Obesidade Grau II </b> </p>
@@ -83,6 +75,7 @@
 				<td width='10%'> <p align = 'center' class = 'baixo'> <a class = 'texto2'> a partir de 40,0 </a> </p>
 			</tr>
 		</table>
-	
+		
+		<button id = 'calcular'>Calcular</button>
 	</body>
 </html>

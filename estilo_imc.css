@@ -68,7 +68,7 @@
 }
 
 .titulo {
-	background-color: #e5eb34; 
+	background-color: #fee440; 
 	border-radius: 5px;
 	width: 50 px;
 	height: 50px;
@@ -84,48 +84,18 @@
 	padding: 10px;
 	padding-left: 1px;
 	margin-left: 80px;
-	margin-right: 80px;
-}
-
-.campos {
-	background-color: #fff;
-	border-radius: 5px;
-	width: 10 px;
-	height: 20px;
-	padding: 3px;
-	padding-right: 200px; 
-	cursor: pointer;
-}
-
-.campos2 {
-	background-color: #fff;
-	border-radius: 5px;
-	width: 10 px;
-	height: 20px;
-	padding: 3px;
-	padding-right: 120px; 
-	cursor: pointer;
-}
-
-.campos3 {
-	background-color: #fff;
-	border-radius: 5px;
-	width: 10 px;
-	height: 20px;
-	padding: 3px;
-	padding-right: 110px; 
-	cursor: pointer;
+	margin-right: 50px;
 }
 
 .calcular {
-	background-color: #ff0000;
+	background-color: #ff6961;
 	border-radius: 5px;
 	width: 5 px;
 	height: 10 px;
 	padding: 10px;
 	padding-left: 1px;
 	margin-left: 310px;
-	margin-right: 10px;
+	margin-right: 5px;
 	cursor: pointer;
 }
 
@@ -134,7 +104,7 @@
 	border-radius: 5px;
 	padding-bottom: 10px;
 	padding-top: 10px; 
-	margin-right: 60%; 
+	margin-right: 450px; 
 	margin-left: 37%;
 }
 
