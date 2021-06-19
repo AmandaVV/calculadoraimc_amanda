@@ -1,62 +1,50 @@
-<html>
+<html lang="en">
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Calculadora de IMC</title>
-		<script src="fun.js"></script>
 		<link rel="stylesheet" href="estilo_imc.css">
 		<meta http-equiv="content-type" content = "text/html; charset=utf-8" />
 	</head>
 	
-	<body>
-		<div class='fundo'>
+<body>
+	<main>
+		<div class="fundo">
 		<div class='explicacao'> <br> <br>
 			<b class = 'texto1' > O que é IMC? </b> <br>
 			<p class = 'texto2'>IMC é a sigla para Índice de Massa Corporal,que é um cálculo que serve para avaliar se a pessoa está dentro do seu peso ideal em relação à altura. Assim, de acordo com o valor do resultado de IMC, a pessoa pode saber se está dentro do peso ideal, acima ou abaixo do peso desejado. </p> <br>
 			<b class = 'texto1' > Como calcular? </b>
 			<p class = 'texto2'> Para calcular o IMC, é utilizada a seguinte fórmula matemática: Peso ÷ (altura x altura) </p>
-			<p align = 'right' > 
-				<b class = 'texto3' >Fonte: </b> 
-				<a class = 'texto4' href = "https://www.tuasaude.com/imc/"> https://www.tuasaude.com/imc/ </a>
-			</p>	
-		</div> 
+			<p align = 'right' > <b class = 'texto3' >Fonte: </b> <a class = 'texto4' href = "https://www.tuasaude.com/imc/"> https://www.tuasaude.com/imc/ </a> </p>	
+		</div> <br> <br> <br> <br> <br>
+	
+		<div class="fundo2">
+			<div class = "titulo"> <br> <b class = 'texto1'> Digite algumas informações sobre você: </b> </div>
+     
+			<div class="atributos">
+				<label> <b class = 'texto5'>Nome:</b></label>
+				<input type="text" id='nome'>
+			</div>
 		
-		<br> <br> <br> <br> <br>
-		<table class='fundo2' cellspacing = 40>
-			<tr>
-				<td width='20%' colspan='2'> <p align = 'center' class = 'titulo'> <br> <b class = 'texto1'> Digite algumas informações sobre você: </b> </p>
-			</tr>
-			<tr>
-				<td width='20%'> <p align = 'left' class = 'atributos'> <b class = 'texto5'> Nome:</b> <input type = 'text' id = 'nome'> </p>
-			</tr>
-			<tr>
-				<td width='20%'> <p align = 'left' class = 'atributos'> <b class = 'texto5'> Altura (m):</b> <input type = 'float' id = 'altura'> </p>
-			</tr>
-			<tr>
-				<td width='20%'> <p align = 'left' class = 'atributos'> <b class = 'texto5'> Peso (Kg):</b> <input type = 'float' id = 'peso'> </p>
-			</tr>
-			<tr>
-				<td width = '20%'> <a align = 'right' class = 'calcular' onclick = 'calcular'> <b class = 'texto1'> CALCULAR </b> </a>
-			</tr>	
-		</table>
+			<div class="atributos">
+				<label> <b class = 'texto5'>Altura (m):</b></label>
+				<input type="number" id='altura'>
+			</div>
 		
+			<div class="atributos">
+				<label> <b class = 'texto5'>Peso (kg):</b></label>
+				<input type="number" id='peso'>
+			</div>
+			
+			<button class = 'botao2' align = 'right' onclick = 'limpa_visor()'> <b class = 'texto3'>LIMPAR</b> </button>
+			<button class = 'botao' align = 'right' id='calcular'> <b class = 'texto3'> CALCULAR</b> </button>
+		</div>
 		<br> <br> <br>
 		
-		<table class='resultado' cellspacing = 10>	
-		<tr>
-			<td width='10%' colspan='2'> <b class = 'texto2' align = 'left'> Olá, <div id = 'nome'> </div> </b> _____________________________________
-		</tr>
-		<tr>
-			<td width='5%'> <b class = 'texto2' align = 'center'> RESULTADO: </b> 
-			<td width='70%'> <div class = 'texto6' align = 'left' id='imc'> </div>
-		
-		</tr>
-		<tr>
-			<td width='5%'> <b class = 'texto2' align = 'center'> SITUAÇÃO: </b> 
-			<td width='70%'> <div class = 'texto6' align = 'center' id = 'situacao'> </b> </div>
-		</tr>
-		</table>
-		
-		<br> <br> <br> <br> <br> <br> <br> <br>
-		
+        <div class="conclusao">  
+			<label> <b class = 'texto6' align = 'left'> RESULTADO: </b> </label> <p align = 'center'>________________________________</p>
+			<label> <b class = 'texto2' align = 'left' id = 'resultado'> </b> </label>
+		</div> <br> <br> <br> <br> <br> <br> <br> <br>
+
 		<table>
 			<tr>
 				<td width='10%'> <p align = 'center' class = 'cima'> <b class = 'texto2'> Magreza </b> </p>
@@ -75,7 +63,7 @@
 				<td width='10%'> <p align = 'center' class = 'baixo'> <a class = 'texto2'> a partir de 40,0 </a> </p>
 			</tr>
 		</table>
-		
-		<button id = 'calcular'>Calcular</button>
-	</body>
+    </main>
+    <script src="fun.js"></script>
+  </body>
 </html>
