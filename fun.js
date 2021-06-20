@@ -1,5 +1,7 @@
 calcular = document.getElementById('calcular');
 
+calcular.addEventListener('click', calculo);
+
 function calculo () {
 	nome = document.getElementById('nome').value;
     altura = document.getElementById('altura').value;
@@ -10,36 +12,34 @@ function calculo () {
 
         imc	= (peso / (altura * altura)).toFixed(2);
 
-        classificacao = '';
+        situacao = '';
 
         if (imc < 18.5){
-            classificacao = 'Magreza';
+            situacao = 'Magreza';
         } 
 		else if (imc < 25) {
-            classificacao = 'Normal';
+            situacao = 'Normal';
         } 
 		else if (imc < 30){
-            classificacao = 'Sobrepeso';
+            situacao = 'Sobrepeso';
         } 
 		else if (imc < 35){
-            classificacao = 'Obesidade I';
+            situacao = 'Obesidade I';
         } 
 		else if (imc < 40){
-            classificacao = 'Obesidade II';
+            situacao = 'Obesidade II';
         } 
 		else {
-            classificacao = 'Obesidade III';
+            situacao = 'Obesidade III';
         }
 
-        document.getElementById("resultado").innerHTML = `Olá, ${nome}! O seu IMC é de ${imc}, e segundo a tabela abaixo, você se encontra em: ${classificacao}`;
+        document.getElementById("resultado").innerHTML = `Olá, ${nome}! O seu IMC é de ${imc}, e segundo a tabela abaixo, você se encontra em: ${situacao}`;
 
     } 
 	else {
         document.getElementById("resultado").innerHTML = 'Preencha todos os campos!';
     }
 }
-
-calcular.addEventListener('click', calculo);
 
 function limpa_visor(){
 	document.location.assign("calculadora_imc.html")
