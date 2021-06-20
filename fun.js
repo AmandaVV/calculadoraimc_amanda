@@ -8,28 +8,34 @@ function calculo () {
 
     if (nome !== '' && altura !== '' && peso !== '') {
 
-        imc	= (peso / (altura * altura)).toFixed(1);
+        imc	= (peso / (altura * altura)).toFixed(2);
 
         classificacao = '';
 
         if (imc < 18.5){
             classificacao = 'Magreza';
-        } else if (imc < 25) {
+        } 
+		else if (imc < 25) {
             classificacao = 'Normal';
-        } else if (imc < 30){
+        } 
+		else if (imc < 30){
             classificacao = 'Sobrepeso';
-        } else if (imc < 35){
+        } 
+		else if (imc < 35){
             classificacao = 'Obesidade I';
-        } else if (imc < 40){
+        } 
+		else if (imc < 40){
             classificacao = 'Obesidade II';
-        } else {
+        } 
+		else {
             classificacao = 'Obesidade III';
         }
 
-        resultado.textContent = `Olá, ${nome}! O seu IMC é de ${imc}, e segundo a tabala abaixo, você se encontra em: ${classificacao}`;
+        document.getElementById("resultado").innerHTML = `Olá, ${nome}! O seu IMC é de ${imc}, e segundo a tabela abaixo, você se encontra em: ${classificacao}`;
 
-    } else {
-        resultado.textContent = 'Preencha todos os campos!';
+    } 
+	else {
+        document.getElementById("resultado").innerHTML = 'Preencha todos os campos!';
     }
 }
 
